@@ -7,4 +7,4 @@ pip3 install -r ./requirements.txt
 echo "Running our test"
 python3 -m robot \
     --console verbose \
-    simpleS1.robot
+    simple.robot
