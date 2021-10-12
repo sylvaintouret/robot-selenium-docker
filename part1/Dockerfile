@@ -27,7 +27,7 @@ RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/${C
     && unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin
 
 # copy our test files
-COPY ./tests /tests
+COPY . /tests
 
 WORKDIR /tests
 
