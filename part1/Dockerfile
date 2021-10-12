@@ -31,4 +31,4 @@ COPY ./tests /tests
 
 WORKDIR /tests
 
-ENTRYPOINT [ "./run.sh" ]
+ENTRYPOINT [ "/tests/run.sh" ]
