@@ -27,8 +27,10 @@ RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/${C
     && unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin
 
 # copy our test files
-COPY ./tests /tests
+COPY . /tests
 
 WORKDIR /tests
 
-ENTRYPOINT [ "/tests/run.sh" ]
+RUN pip3 install robotframework==4.1.1 robotframework-seleniumlibrary==5.1.3
+
+ENTRYPOINT [ "python3", "-m", "robot", "--console", "verbose", "simple.robot"]
