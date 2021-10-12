@@ -5,7 +5,7 @@
 Library           SeleniumLibrary     run_on_failure=Nothing
 
 # Our little library (set the option  headless tp true)
-Library           ChromeHeadlessS1.py     headless=True
+Library           ChromeHeadless.py     headless=True
 
 Suite Teardown    Close Browser
 
