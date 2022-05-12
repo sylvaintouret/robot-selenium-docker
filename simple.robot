@@ -27,6 +27,6 @@ Open Chrome
 *** Test Cases ***
 # Our modest test case
 Visit Delia
-    Open Chrome     https://www.delia.tech/
-    set chrome geolocation      https://www.delia.tech/   47.207244   -1.558834
+    Open Chrome     https://www.google.fr/maps
+    set chrome geolocation      https://www.google.fr/maps   47.207244   -1.558834
 
